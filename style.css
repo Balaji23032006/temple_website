@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055, #000000);
+    color: white;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background: purple;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkviolet;
+}
+
+.image-box {
+    height: 150px;
+    background: #444;
+    text-align: center;
+    line-height: 150px;
+    margin-bottom: 10px;
+}
+
+.qr-box {
+    height: 120px;
+    background: #555;
+    text-align: center;
+    line-height: 120px;
+    margin-top: 10px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
