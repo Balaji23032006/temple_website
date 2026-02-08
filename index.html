@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LOGIN -->
+    <div id="loginBox">
+        <h2>அருள்மிகு தண்டாயுதபாணி சுவாமி திருக்கோவில், பழனி</h2>
+
+        <div class="image-box">Temple Image Space</div>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+
+        <p id="loginMsg"></p>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="hidden">
+        <h2>Login Successful 🙏</h2>
+
+        <!-- HALL BOOKING -->
+        <div class="card">
+            <h3>Hall Booking</h3>
+
+            <select id="hallType">
+                <option value="Mini Hall">Mini Hall (Rs.700)</option>
+                <option value="Big Hall">Big Hall (Rs.1500)</option>
+                <option value="Outdoor">Outdoor (Rs.1200)</option>
+            </select>
+
+            <label>From:</label>
+            <input type="datetime-local" id="fromDate">
+
+            <label>To:</label>
+            <input type="datetime-local" id="toDate">
+
+            <button onclick="bookHall()">Book Hall</button>
+            <p id="hallMsg"></p>
+        </div>
+
+        <!-- POOJA BOOKING -->
+        <div class="card">
+            <h3>Pooja Booking</h3>
+            <select id="poojaType">
+                <option>Golden Ratham</option>
+                <option>Thai Poosam</option>
+                <option>Daily Abishekam</option>
+            </select>
+            <button onclick="bookPooja()">Book Pooja</button>
+            <p id="poojaMsg"></p>
+        </div>
+
+        <!-- DONATION -->
+        <div class="card">
+            <h3>Donation</h3>
+
+            <select id="donationPurpose">
+                <option>Food</option>
+                <option>Pooja Products</option>
+                <option>Vestment & Jewels</option>
+                <option>Others</option>
+            </select>
+
+            <input type="number" id="amount" placeholder="Amount (Rs)">
+            <button onclick="payDonation()">Pay</button>
+
+            <div class="qr-box">Dummy QR Code</div>
+            <p id="donationMsg"></p>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
